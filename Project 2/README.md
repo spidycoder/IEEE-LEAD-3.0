@@ -21,4 +21,4 @@
     - All Required Data Mentioned Above
     - Seasons Info
 
-### Judging Criteria: On the basis of milestones completed, the design of website, customization of website according to the weather.
+### Judging Criteria: On the basis of milestones completed, the design of website, customization of website.
