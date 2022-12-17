@@ -1,4 +1,4 @@
 Hey Welcome 
 
-Take a look at my basic portfolio website 
+Take a look at my portfolio website 
 https://anishnew2003.netlify.app
