@@ -20,7 +20,6 @@ Portfolio website developed for LEAD 2022 organised by IEEE BIT Mesra.
                b. Used Cf api to fetch ratings
                c. Tailwind Css
                d. smooth scrolling
-
                e. React icons
                   ( SVG icons used instead of pngs )
                f. Netlify for hosting
@@ -37,4 +36,4 @@ Portfolio website developed for LEAD 2022 organised by IEEE BIT Mesra.
 - Vite
 - Typescript js
 - React icons
-- AOS(animate on scroll)
+- AOS (animate on scroll)
