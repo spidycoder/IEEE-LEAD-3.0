@@ -12,7 +12,7 @@ Portfolio website developed for LEAD 2022 organised by IEEE BIT Mesra.
 4.  Movie Details
 5.  Responsive Design
 6.  Required data
-    7.ADDITIONAL MILESTONES ✔️ -
+7.  ADDITIONAL MILESTONES ✔️ -
 
                            a. Movie Details/ More Information On a separate page
                                 - Image
