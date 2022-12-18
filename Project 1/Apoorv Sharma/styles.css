@@ -1,0 +1,355 @@
+@font-face {
+    font-family: 'madrigal';
+    src: url(Madrigal-mLJ92.ttf);
+}
+
+@font-face {
+    font-family: 'neoteric';
+    src: url(NEOTERIC.ttf);
+}
+
+header .as{
+    font-family: madrigal;
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(232, 231, 231);
+}
+
+
+header{
+    background-image: linear-gradient(to right, rgb(52,52,52), rgb(36,36,36));
+    height: 4em;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header div{
+    margin-left: 5vw;
+}
+
+.nav{
+    width: 15em;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 18vw;
+}
+
+.nav_item{
+    font-family: neoteric;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-right: 1.8vw;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#mode_button{
+    width: 1.5em;
+    background-color: rgb(187, 187, 187);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.banner{
+    max-width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    color: #4b4b4b;
+}
+
+.title{
+    font-family: neoteric;
+}
+
+.workasline{
+    color: darkcyan;
+    font-style: italic;
+}
+
+div img{
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+main{
+    margin: 5vw auto;
+    max-width: 1000px;
+    padding: 10px;
+}
+
+.skill_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 1000px;
+    align-items: center;
+    justify-items: space-around;
+}
+
+.skillslogo{
+    width: 4em;
+    min-width: 65px;
+    height: auto;
+    max-height: 75px;
+    margin: 2vh;
+}
+
+.box{
+    border: 2px solid darkcyan;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 100px;
+    color: whitesmoke;
+    background-color: darkcyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.skill_logo{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bg_skills{
+    margin: 0;
+    padding: 0;
+}
+
+.hr{
+    margin: 0;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.link{
+    text-decoration: none;
+    color: darkcyan;
+}
+
+.slideshow{
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+    box-shadow: rgb(48, 48, 48) 0px 20px 30px -10px;
+    border: 10px solid rgba(3, 66, 66, 0.623);
+    border-radius: 5px;
+    max-height: 700px;
+}
+
+.slideshow > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.slide{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: 200ms opacity ease-in-out;
+}
+
+.poster{
+    height: 50vh;
+    width: auto;
+    max-height: 700px;
+}
+
+.slide[data-active]{
+    opacity: 1;
+    display: contents;
+}
+
+.button{
+    position: absolute;
+    top: 45%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    font-size: 2.5em;
+    color: darkcyan;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.336);
+    transition: 0.1s;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+
+.logo{
+    max-width: 300px;
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+}
+
+.clubs{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 18px;
+}
+
+footer{
+    background-image: linear-gradient(to right, rgb(10, 184, 184), darkcyan);
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .socials{
+    max-width: 45px;
+    margin: 8px 5px;
+}
+
+
+.nav-item:hover{
+    color: darkcyan;
+}
+
+.time{
+    font-family: Rajdhani;
+    font-size: 25px;
+    background-color: #f6f2f2;
+    padding: 5px;
+    margin-top: 100px;
+    border: none;
+    border-radius: 10px;
+}
+
+.utility_name{
+    font-family: Teko;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+#cfhandle{
+    font-style: italic;
+}
+
+#utilities{
+    line-height: 30px;
+}
+
+.cf_rating span{ 
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#cfhandle{
+    background-color: #f6f2f2;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}   
+
+.tell_me{
+    border: 1px solid #d8d5d5;
+    background-color: #f6f2f2;
+    padding: 5px;
+    color: #4b4b4b;
+    border-radius: 5px;
+}
+
+#litsoclogo{
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 590px){
+    .skill_container{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .as{
+        display: none;
+    }
+
+    .nav{
+       margin: 0;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .poster{
+        height: 40vh;
+    }
+
+    .slideshow > ul{
+        height: 40vh;
+    }
+    .slideshow{
+        border: 5px solid rgba(3, 66, 66, 0.623);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #body{
+        background-color: #1f1f1f;
+        color: rgb(218, 218, 218);
+    }
+    #time{
+        background-color: #1f1f1f;
+    }
+    #litsoclogo{
+        background-color: whitesmoke;
+    }
+  }
+
+.divline{
+    width: 2px;
+    height: 45px;
+    max-height: 45px;
+    background-color: black;
+}
+
+.email{
+    color: black;
+}
