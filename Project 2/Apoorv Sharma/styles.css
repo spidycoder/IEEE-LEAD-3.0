@@ -1,0 +1,150 @@
+html {
+    height: 100vh;
+    background-color: #2c3e50;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header {
+    background-color: #1a2b43;
+    padding: 5px;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    font-size: 3.5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.reel_img {
+    height: 3vh;
+    margin-right: 2px;
+}
+
+.search {
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 100px;
+    padding: 7px;
+    font-size: 0.5em;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #505F6E;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin: 1rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    background-color: #1a2b43;
+    overflow: hidden;
+}
+
+.img {
+    width: 400px;
+    height: 320px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 1;
+    justify-content: center;
+    color: white;
+    background-color: #1a2b43;
+    opacity: 90%;
+    height: 400px;
+}
+
+.hidden {
+    position: absolute;
+    top: 20px;
+    width: 400px;
+    display: none;
+    height: 400px;
+    overflow: hidden;
+}
+
+.overview {
+    padding: 10px 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.name {
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.7em;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    display: none;
+}
+
+.rating {
+    padding: 5px;
+    border-radius: 10px;
+    color: #1a2b43;
+}
+
+.year {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: #1a2b43;
+}
+
+.box:hover .description {
+    transform: translateY(-325px);
+    transition: ease-in-out 0.3s;
+}
+
+.box:hover .hidden {
+    display: initial;
+    margin-top: 30px;
+}
+
+.box:hover .bottom {
+    width: 400px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-evenly;
+}
