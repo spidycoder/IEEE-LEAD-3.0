@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Personal Portfolio.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="logo" class="active">
+          <a href="#">Portfo<span>lio.</span></a>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#myskills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <section class="home" id="home">
+      <div class="home-container">
+        <div class="home-content">
+          <div class="text-1">Hello, my name is</div>
+          <div class="text-2">Aayushmaan Tawer</div>
+          <div class="text-3">And I'm a <span class="typing">Developer</span></div>
+          <button class="hireme">Hire me</button>
+        </div>
+      </div>
+    </section>
+    <div class="about" id="about">
+      <img class="mypic" src="assets/img.jpg" />
+      <div>
+        <div class="about-text">
+          About me<br />--who i am?--
+          <hr />
+        </div>
+        <br />
+        <p>
+          I am currently a student at Birla Institute Of Technology, Mesra
+          pursuing BTECH in IT branch. I have done my schooling at Dehradun
+          Public School, Govindpuram, Ghaziabad UP. I can sum up my entire life
+          in three words – I can win! I am a self-starter with strong
+          interpersonal skills. I work efficiently both as an individual
+          contributor as well as along with a team. I seek new challenges and
+          try to think out of the box while looking for creative solutions to a
+          given problem.
+        </p>
+        <button>Download CV</button>
+      </div>
+    </div>
+    <div class="myskills" id="myskills">
+      <div class="skilltxt">
+        My Skills<br />
+        --what technical skills i have?--
+        <div class="skillpic">
+          <hr />
+          <br />
+          <img style="border-radius: 8%" src="assets/c.png" />
+          <img src="assets/cpp.png" />
+          <img style="border-radius: 8%" src="assets/python.png" />
+          <img src="assets/htm.png" />
+          <img src="assets/css.png" />
+          <img src="assets/js.png" />
+          <img src="assets/bootstrap.png" />
+          <img src="assets/nodejs.png" />
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <div class="projecttxt">
+        My Projects<br>
+        --what i have worked on?--
+      </div>
+      <hr style="margin: 0 6%" />
+      <div class="prcontainer">
+        <div>
+          <img src="assets/p1.png" />
+          <h2>Project 1</h2>
+          <br />
+          <p>This is a project I made!</p>
+        </div>
+        <div>
+          <img src="assets/p2.png" />
+          <h2>Project 2</h2>
+          <br />
+          <p>This is a project I made!</p>
+        </div>
+        <div>
+          <img src="assets/p3.png" />
+          <h2>Project 3</h2>
+          <br />
+          <p>This is a project I made!</p>
+        </div>
+      </div>
+      <p>
+        This website is made during IEEE Lead 3.0 I don't have many projects and
+        I am still working on my skills.
+      </p>
+    </div>
+    <div class="contact" id="contact">
+      <div class="contacttxt">
+        Contact<br />
+        --want to get in touch?--
+      </div>
+      <hr style="margin: 0 6%" />
+      <div class="contactform">
+        <form action="">
+          <div id="header">
+            <h1>Contact Form</h1>
+            <h6>Please fill all the contacts in detail</h6>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="head">
+            <p>
+              Your Name:<input
+                type="text"
+                name="name"
+                placeholder="Your Full Name"
+                required
+                style="margin: 5px 0 15px 0"
+              />
+            </p>
+            <p>
+              Your Email:<input
+                type="email"
+                name="email"
+                placeholder="Valid Email Address"
+                required
+                style="margin: 5px 0 15px 0"
+              />
+            </p>
+            <p>
+              Message:<textarea
+                name="message"
+                cols="10"
+                rows="5"
+                required
+                placeholder="Your Message"
+                style="margin: 5px 0 15px 0"
+              ></textarea>
+            </p>
+            <p>
+              Subject:<input
+                type="text"
+                placeholder="About"
+                required
+                style="margin: 5px 0 15px 0"
+              />
+            </p>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+
+      <div class="social">
+        <div class="socialtxt">My social media links</div>
+        <hr style="margin: 0 6%" />
+        <div class="handles">
+          <a target="_blank" href="https://www.instagram.com/iaayushmaan">
+            <img src="assets/insta.png"
+          /></a>
+          <a target="_blank" href="https://www.facebook.com/iaayushmaan">
+            <img src="assets/facebook.png"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/aayushmaan-tawer-24a23b247"
+          >
+            <img src="assets/linkedin.png"
+          /></a>
+          <a target="_blank" href="https://www.github.com/iaayushmaan">
+            <img src="assets/github.png"
+          /></a>
+        </div>
+        <a href="#">Back to Top</a>
+      </div>
+    </div>
+    <script src="Personal Portfolio.js"></script>
+  </body>
+</html>
