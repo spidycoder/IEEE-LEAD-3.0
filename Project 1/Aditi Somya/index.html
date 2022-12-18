@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+
+    <!------------------------------- home ----------------------------->
+
+
+    <div id="header">
+
+
+
+        <div class="container">
+
+
+            <nav class="navbar">
+
+                
+
+                <ul id="sidemenu">
+                    <li><a class="itemss" href="#header">HOME</a></li>
+                    <li><a class="itemss" href="#about">ABOUT</a></li>
+                    <li><a class="itemss" href="#skills">SKILLS</a></li>
+                    <li><a class="itemss" href="#projects">PROJECTS</a></li>
+                    <li><a class="itemss" href="#contacts">SOCIAL LINKS</a></li>
+                    <img class="menubar" onclick="close_options()" src="./images/R.png">
+                </ul>
+
+
+                
+                   
+                    <img class="menubar" onclick="open_options()" src="./images/menu-bar.gif">
+
+
+            </nav>
+
+            <div class="header-text">
+                <h1>HELLO, I'M <span>ADITI SOMYA</span>,</h1>
+                <p>an enthusiast learner.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------- about -------------------------------->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="./images/girl.png">
+                </div>
+                <div class="col2">
+                    <h1 class="aboutme">ABOUT ME</h1>
+                    <p class="moreaboutme">I am a native of Bihar but born and brought up in Ranchi. I have done my 10th
+                        from Don Bosco Academy, Mccluskiegunj and 12th from Delhi Public School, Ranchi.
+                        <br>
+                        Currently i am pursuing Electrical and Electronics Engineering from Birla Institute of
+                        Technology, Mesra.
+                        I am trying to explore various fields and trying to figure out where my real interest lies.
+                        Web dev and CP interests me.
+                        <br>
+                        Apart from all these, i like listening to music and exploring interesting things on the
+                        internet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- skills ------------------------------>
+
+    <div id="skills">
+        <div class="container">
+            <div class="myskilll">MY SKILLS</div>
+            <div class="row">
+
+                <div class="column1">
+                    <diV class="langweb">WEB DEV</diV>
+                    <div class="imagess"> <img class="im" src="./images/HTML_Logo.png" width="150px"></div>
+                    <div class="imagess"> <img class="im" src="./images/CSSLOGO.png" width="150px"></div>
+                    <div class="imagess"> <img class="im" src="./images/JavaScript-logo.png" width="210px"></div>
+                </div>
+                <div class="column2">
+                    <div class="langweb">LANGUAGES</div>
+                    <div class="imagess"> <img class="im" src="./images/cwithbac.webp" width="150px"></div>
+                    <div class="imagess"> <img class="im" src="./images/c-plus-plus-logo.png" width="150px"></div>
+                    <div class="imagess"> <img class="im" src="./images/pythonlogo2.png" width="150px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------- projects -------------------->
+
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="pro">PROJECTS</h1>
+            <P class="par">
+                These are the projects i have done so far. Exploring to come up with more!
+            </P>
+            <div class="work">
+                <div class="row1" id="row1">
+                    <div class="sec1">
+                        <img class="my_home" src="./images/Screenshot 2022-12-03 150207.png" width="800px">
+
+                    </div>
+                    <div class="sec2">
+                        <p class="prodes">A portfolio website describing me, my skills and fields of interest.</p>
+                        <img class="cat" src="./images/github_git.png">
+                        <br>
+                        <a href="https://github.com/Aditi-0405/Personal_Portfolio">SOURCE CODE</a>
+                    </div>
+
+
+                </div>
+                <div class="row1" id="row1">
+                    <div class="sec1">
+                        <img class="my_home" src="./images/movie_home_page.png" width="800px">
+
+                    </div>
+                    <div class="sec2">
+                        <p class="prodes">A website which displays popular releases and allows you to search for movies.
+                        </p>
+                        <img class="cat" src="./images/github_git.png">
+                        <br>
+                        <a href="https://github.com/Aditi-0405/Movie-Api_project">SOURCE CODE</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+     <!----------------------------- contacts ---------------------------------->
+    
+    <div id="contacts">
+        <div class="container">
+            <h1 class="cont">CONTACTS</h1>
+            <div class="logos">
+                <a href="https://www.facebook.com/">
+                    <img class="img_logo" src="./images/Facebook.png" width="60px" alt>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="img_logo" src="./images/instagram.png" width="60px" alt>
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img class="img_logo" src="./images/linked_in.png" width="60px" alt>
+                </a>
+                <a href="https://github.com/Aditi-0405">
+                    <img class="img_logo" src="./images/github_git.png" width="75px" alt>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script>
+        var sidemen=document.getElementById("sidemenu");
+        function open_options(){
+            sidemen.style.left="0";
+            
+        }
+        function close_options(){
+            sidemen.style.left="-250px";
+        }
+    </script>
+</body>
+
+</html>

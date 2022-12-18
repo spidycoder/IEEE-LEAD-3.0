@@ -1,0 +1,846 @@
+body {
+    background-color: black;
+    color: aliceblue;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/1129115.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container {
+    padding: 10px 10%;
+
+
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: chartreuse;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 40px;
+    text-align: center;
+    font-style: inherit;
+}
+
+.header-text h1 span {
+    color: aqua;
+    font-weight: bolder;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    flex-basis: 35%;
+}
+
+.col1 img {
+    width: 100%;
+
+}
+
+.col2 {
+    flex-basis: 65%;
+}
+
+.aboutme {
+    color: crimson;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#about {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/backgroung2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#skills {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./images/backgroung2.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: stretch;
+   
+}
+
+.sk {
+    font-size: 50px;
+    font-weight: 300;
+    color: aqua;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.skill_lists {
+    width: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1 fr;
+    grid-gap: 1vh;
+    row-gap: 1vh;
+    column-gap: 1vh;
+}
+
+.myskilll {
+    margin-bottom: 20%;
+    font-size: 60px;
+    color: chartreuse;
+}
+
+.langweb {
+    color: cadetblue;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#skills {
+    width: 100%;
+    background-image: url(./images/R.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagess:hover {
+    background-size: 150%;
+    background-position: center;
+    background-color: greenyellow;
+}
+
+#projects {
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    color: crimson;
+
+}
+
+#projects {
+    width: 100%;
+    background-image: url(./images/white.webp);
+    background-size: cover;
+    background-position: center;
+    align-items: stretch;
+    
+}
+
+.pro {
+    font-size: 40px;
+}
+
+.par {
+    font-size: 25px;
+    padding-bottom: 40px;
+
+}
+
+#contacts {
+    align-items: center;
+    text-align: center;
+    background-color: coral;
+  
+}
+
+.logos img {
+
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.cont {
+    color: black;
+    margin-bottom: 3%;
+}
+
+.itemss {
+    color: aqua;
+}
+
+.moreaboutme {
+    font-size: 30px;
+}
+
+.sec1 {
+    flex-basis: 35%;
+
+}
+
+.sec2 {
+    flex-basis: 60%;
+
+}
+
+.my_home {
+    width: 100%;
+
+    border-radius: 20px;
+
+}
+
+.prodes {
+    font-size: 25px;
+    color: darkred;
+}
+
+nav.fas {
+    display: none;
+}
+
+#menubar {
+    display: none;
+}
+
+#header label {
+
+    cursor: pointer;
+    display: none;
+}
+
+
+.row1 {
+    display: grid;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+
+}
+
+.work {
+    display: flex;
+}
+
+
+.cat {
+    width: 25px;
+
+}
+
+#header label {
+    margin-left: 25px;
+
+}
+
+
+.menubar{
+    width:30px;
+}
+.crossbar{
+    width:30px;
+}
+.menubar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------- making the website responsive ---------------*/
+@media(max-width:1100px) {
+
+    .header-text {
+        margin-top: 20%;
+        font-size: 30px;
+    }
+
+    .aboutme {
+        font-size: 25px;
+    }
+
+    .myskilll {
+        font-size: 30px;
+
+    }
+
+    .langweb {
+        font-size: 15px;
+    }
+
+    .im {
+        width: 90px;
+    }
+
+    .par {
+        font-size: 20px;
+    }
+
+    .cont {
+        font-size: 25px;
+    }
+
+    .img_logo {
+        width: 40px;
+    }
+
+    .cont {
+        color: black;
+        margin-bottom: 10%;
+    }
+
+    .moreaboutme {
+        font-size: 18px;
+    }
+
+    .prodes {
+        font-size: 15px;
+    }
+
+    nav.fas {
+        display: block;
+        font-size: 20px;
+    }
+
+    .imagess:hover {
+        background-size: 150%;
+        background-position: center;
+        background-color: greenyellow;
+    }
+
+    .pro {
+        font-size: 30px;
+    }
+
+
+
+}
+
+@media(max-width:700px) {
+
+    .header-text {
+        margin-top: 20%;
+        font-size: 25px;
+    }
+
+    .aboutme {
+        font-size: 25px;
+    }
+
+    .myskilll {
+        font-size: 30px;
+
+    }
+
+    .langweb {
+        font-size: 15px;
+    }
+
+    .im {
+        width: 90px;
+    }
+
+    .par {
+        font-size: 20px;
+    }
+
+    .cont {
+        font-size: 25px;
+    }
+
+    .img_logo {
+        width: 40px;
+    }
+
+    .cont {
+        color: black;
+        margin-bottom: 10%;
+    }
+
+    .moreaboutme {
+        font-size: 18px;
+    }
+
+    .prodes {
+        font-size: 15px;
+    }
+
+    nav.fas {
+        display: block;
+        font-size: 20px;
+    }
+
+    .imagess:hover {
+        background-size: 150%;
+        background-position: center;
+        background-color: greenyellow;
+    }
+
+    .pro {
+        font-size: 30px;
+    }
+    
+    .menubar {
+        display: block;
+    }
+
+    .navbar ul {
+        background: black;
+        position: fixed;
+        top: -20px;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .navbar ul .menubar {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+
+
+}
+
+
+
+@media(max-width:600px) {
+
+    .header-text {
+        margin-top: 30%;
+        font-size: 20px;
+    }
+
+    .aboutme {
+        font-size: 25px;
+    }
+
+    .myskilll {
+        font-size: 30px;
+
+    }
+
+    .langweb {
+        font-size: 15px;
+    }
+
+    .im {
+        width: 90px;
+    }
+
+    .par {
+        font-size: 20px;
+    }
+
+    .cont {
+        font-size: 25px;
+    }
+
+    .img_logo {
+        width: 40px;
+    }
+
+    .cont {
+        color: black;
+        margin-bottom: 10%;
+    }
+
+    .moreaboutme {
+        font-size: 18px;
+    }
+
+    .prodes {
+        font-size: 15px;
+    }
+
+    nav.fas {
+        display: block;
+        font-size: 20px;
+    }
+
+    .imagess:hover {
+        background-size: 150%;
+        background-position: center;
+        background-color: greenyellow;
+    }
+
+    .pro {
+        font-size: 30px;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .navbar ul {
+        background: black;
+        position: fixed;
+        top: -20px;
+        left: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .navbar ul .menubar {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+
+
+}
+
+@media(max-width:500px) {
+
+    .header-text {
+        margin-top: 50%;
+        font-size: 18px;
+    }
+
+    .aboutme {
+        font-size: 20px;
+    }
+
+    .myskilll {
+        font-size: 30px;
+
+    }
+
+    .langweb {
+        font-size: 15px;
+    }
+
+    .im {
+        width: 90px;
+    }
+
+    .par {
+        font-size: 20px;
+    }
+
+    .cont {
+        font-size: 25px;
+    }
+
+    .img_logo {
+        width: 40px;
+    }
+
+    .cont {
+        color: black;
+        margin-bottom: 10%;
+    }
+
+    .moreaboutme {
+        font-size: 15px;
+    }
+
+    .prodes {
+        font-size: 15px;
+    }
+
+    nav.fas {
+        display: block;
+        font-size: 20px;
+    }
+
+    .imagess:hover {
+        background-size: 150%;
+        background-position: center;
+        background-color: greenyellow;
+    }
+
+    .pro {
+        font-size: 25px;
+    }
+   
+    .menubar {
+        display: block;
+    }
+
+    .navbar ul {
+        background: black;
+        position: fixed;
+        top: -20px;
+        right: -200px;
+        width: 180px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .navbar ul .menubar {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+
+
+
+
+}
+
+@media(max-width:400px) {
+
+    .header-text {
+        margin-top: 80%;
+        font-size: 15px;
+    }
+
+    .aboutme {
+        font-size: 12px;
+    }
+
+    .myskilll {
+        font-size: 20px;
+
+    }
+
+    .langweb {
+        font-size: 10px;
+    }
+
+    .im {
+        width: 70px;
+    }
+
+    .par {
+        font-size: 10px;
+    }
+
+    .cont {
+        font-size: 15px;
+    }
+
+    .img_logo {
+        width: 30px;
+    }
+
+    .cont {
+        color: black;
+        margin-bottom: 10%;
+    }
+
+    .moreaboutme {
+        font-size: 10px;
+        margin-top: 19px;
+    }
+
+    .prodes {
+        font-size: 15px;
+    }
+
+    nav.menubar {
+        display: block;
+        font-size: 20px;
+    }
+
+   
+    .pro {
+        font-size: 18px;
+    }
+    
+    .fas {
+        display: block;
+    }
+
+    .navbar ul {
+        background: black;
+        position: fixed;
+        top: -20px;
+        right: -200px;
+        width: 140px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .navbar ul .menubar {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+
+
+}
+
+@media(max-width:300px) {
+
+    .header-text {
+        margin-top: 40%;
+        font-size: 10px;
+    }
+
+    .aboutme {
+        font-size: 10px;
+    }
+
+    .myskilll {
+        font-size: 20px;
+
+    }
+
+    .langweb {
+        font-size: 10px;
+    }
+
+    .im {
+        width: 70px;
+    }
+
+    .par {
+        font-size: 10px;
+    }
+
+    .cont {
+        font-size: 15px;
+    }
+
+    .img_logo {
+        width: 30px;
+    }
+
+    .cont {
+        color: black;
+        margin-bottom: 10%;
+    }
+
+    .moreaboutme {
+        font-size: 10px;
+        margin-top: 19px;
+    }
+
+    .prodes {
+        font-size: 15px;
+    }
+
+    nav.fas {
+        display: block;
+        font-size: 20px;
+    }
+
+   
+    
+    .menubar {
+        display: block;
+    }
+
+    .navbar ul {
+        background: black;
+        position: fixed;
+        top: -20px;
+        right: -200px;
+        width: 125px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .navbar ul .menubar {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+
+
+}
