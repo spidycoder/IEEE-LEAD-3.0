@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/x-icon" href="css/film-reel.png" />
+    <title>FilmFacts</title>
+</head>
+<body>
+  <style>
+    #loader-wrapper {
+      position: absolute;
+      z-index: 100000000000000000000;
+      background: black;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .hidden {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;
+    }
+
+    .dash {
+      margin: 0 15px;
+      width: 35px;
+      height: 15px;
+      border-radius: 8px;
+      background: #2caeff;
+      box-shadow: 0 0 10px 0 #61cff4;
+    }
+
+    .uno {
+      margin-right: -18px;
+      transform-origin: center left;
+      animation: spin 3s linear infinite;  
+    }
+
+    .dos {
+      transform-origin: center right;
+      animation: spin2 3s linear infinite;
+      animation-delay: .2s;
+    }
+
+    .tres {
+      transform-origin: center right;
+      animation: spin3 3s linear infinite;
+      animation-delay: .3s;
+    }
+
+    .cuatro {
+      transform-origin: center right;
+      animation: spin4 3s linear infinite;
+      animation-delay: .4s;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(360deg);
+      }
+      30% {
+        transform: rotate(370deg);
+      }
+      35% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin2 {
+      0% {
+        transform: rotate(0deg);
+      }
+      20% {
+        transform: rotate(0deg);
+      }
+      30% {
+        transform: rotate(-180deg);
+      }
+      35% {
+        transform: rotate(-190deg);
+      }
+      40% {
+        transform: rotate(-180deg);
+      }
+      78% {
+        transform: rotate(-180deg);
+      }
+      95% {
+        transform: rotate(-360deg);
+      }
+      98% {
+        transform: rotate(-370deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+
+    @keyframes spin3 {
+      0% {
+        transform: rotate(0deg);
+      }
+      27% {
+        transform: rotate(0deg);  
+      }
+      40% {
+        transform: rotate(180deg);
+      }
+      45% {
+        transform: rotate(190deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      62% {
+        transform: rotate(180deg);
+      }
+      75% {
+        transform: rotate(360deg);
+      }
+      80% {
+        transform: rotate(370deg);
+      }
+      85% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin4 {
+      0% {
+        transform: rotate(0deg);
+      }
+      38% {
+        transform: rotate(0deg);
+      }
+      60% {
+        transform: rotate(-360deg);
+      }
+      65% {
+        transform: rotate(-370deg);
+      }
+      75% {
+        transform: rotate(-360deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+
+    @keyframes fadeOut {
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
+  <div id="loader-wrapper">
+    <div class="dash uno"></div>
+    <div class="dash dos"></div>
+    <div class="dash tres"></div>
+    <div class="dash cuatro"></div>
+  </div>
+  <script>
+    window.addEventListener("load", function(){
+      console.log("loaded");
+      const loader = document.getElementById("loader-wrapper");
+      document.getElementById("loader-wrapper").classList.toggle("hidden");
+    });
+  </script>
+  <nav class="navigation" id="navigation">
+    <div class="progressbar">
+      <div class="progress-bar-inner" id="progress-bar-inner">
+      </div>
+    </div>
+    <button id="navbutton" class="navbutton" onclick="sidebaron()" style="color: #757575;"><i class="fa-solid fa-bars"></i></button>
+    <div id="mysidebar" class="sidebar">
+      <p>‎</p>
+      <p>‎</p>
+      <p>‎</p>
+      <a href="index.html" onclick="sidebaroff()"><i class="fa-solid fa-house"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href=""><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href=""><i class="fa-brands fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href=""> <i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href=""> <i class="fa-solid fa-envelope"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!-- <a onclick="changemode()"><i class="fa-solid fa-sun"></i></a> -->
+      <p>‎</p>
+    </div>
+    <a href="index.html" class="logo" id="logo">
+      FilmFacts
+    </a>
+    <form action="searchpage.html" class="searchbar">
+        <input type="search" name="search" placeholder="Find movies" class="searchbar-input">
+        <button type="submit">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+  </nav>
+
+  <div id="search_results" style="padding-top: 100px;">
+    
+  </div>
+  <div class="footer">
+    <div class="links">
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><i class="fa-brands fa-twitter"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""> <i class="fa-brands fa-youtube"></i></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""> <i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <br>
+    <i class="fa-regular fa-copyright"></i> Made by <a href="" style="text-decoration:none; color:#dbdbdb">Ayush Kumar</a>   2022
+  </div>
+  
+</body>
+<script src="js/searchpagejs.js"></script>
+</html>

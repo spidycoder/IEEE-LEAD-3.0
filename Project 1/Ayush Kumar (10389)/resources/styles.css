@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    width: 0px;
+}
+*:hover{
+    cursor: auto;
+}
+/* -------------------------------------------- PAGES STARTS -------------------------------------------- */
+.homepg {
+    color: #1d2026;
+    min-height: 0vh;
+    padding-bottom: 50px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+.aboutpg {
+    padding-top: 6vh;
+    color: #1d2026;
+    min-height: 0vh;
+    width: 100%;
+    background-image: linear-gradient(white, rgb(160, 213, 230));
+    /* background: rgb(160, 213, 230); */
+    position: relative;
+}
+.skillspg {
+    padding-top: 6vh;
+    color: #1d2026;
+    min-height: 0vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgb(160, 213, 230), rgb(47, 169, 235)); */
+    background: rgb(160, 213, 230);
+    position: relative;
+}
+.projectpg{
+    padding-top: 6vh;
+    color: #1d2026;
+    min-height: 0vh;
+    width: 100%;
+    /* background: rgb(160, 213, 230); */
+    background-image: linear-gradient(rgb(160, 213, 230), rgb(47, 169, 235));
+    position: relative;
+}
+.codeforcespg {
+    padding-top: 6vh;
+    color: #1d2026;
+    min-height: 0vh;
+    width: 100%;
+    background: rgb(47, 169, 235);
+    position: relative;
+}
+.contactpg {
+    padding-top: 6vh;
+    color: #efefef;
+    min-height: 0vh;
+    width: 100%;
+    background: #1d2026;
+    position: relative;
+    overflow-x: hidden ;
+}
+
+/* -------------------------------------------- PAGES ENDS -------------------------------------------- */
+
+/* -------------------------------------------- MODES STARTS -------------------------------------------- */
+.darkhomebg {
+    color: rgb(191,174,145);
+    background: rgb(10, 9, 10);
+}
+.darkaboutbg {
+    color: rgb(191,174,145);
+    /* background: #1b202b; */
+    background: rgb(10, 9, 10);
+}
+.darkskillsbg {
+    color: rgb(191,174,145);
+    /* background: #1c212b; */
+    background: rgb(10, 9, 10);
+}
+.darkprojectbg {
+    color: rgb(191,174,145);
+    /* background: #1d2026; */
+    background: rgb(10, 9, 10);
+}
+.darkcontactbg {
+    color: rgb(191,174,145);
+    /* background: #1d2026; */
+    background: rgb(10, 9, 10);
+}
+/* -------------------------------------------- MODES ENDS -------------------------------------------- */
+
+/* --------------------------------------------NAVIGATION BAR STARTS-------------------------------------------- */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 1.7vh;
+    padding-bottom: 1.6vh;
+    transition: 0.5s;
+}
+nav ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    width: 100%;
+    justify-content: space-between;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 100;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size:larger;
+    color: #fff;
+    transition: 0.6s;
+}
+nav ul li a:hover{
+    font-size: x-large;
+}
+.progressbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #1d202600;
+    transition: 0.6s;
+    z-index: 1000;
+}
+.progress-bar-inner {
+    position: fixed;
+    width: 0%;
+    padding: 0%;
+    height: 4px;
+    background-color: rgb(191,174,145);
+    color: #fff;
+    z-index: 10000;
+}
+#navbutton {
+    background: #e6f6f600;
+    color: #fff;
+    border: none;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 3vh;
+    font-size: x-large;
+    display: none;
+    z-index: 100000000;
+}
+.navbuttondark {
+    color: #fff;
+}
+.navbarhide {
+    transform: translateY(-54px);
+    transition: 1s;
+}
+.progressbarhide {
+    transform: translateY(-54px);
+    transition: 1s;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 85%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    align-items: center;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #8a8484;
+}
+
+                    /* --------------------------------------------MODE CHANGE BUTTON STARTS-------------------------------------------- */
+.modebutton{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.modebutton span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 3.5px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+.active{
+    background: #00986f;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+                    /* --------------------------------------------MODE CHANGE BUTTON ENDS-------------------------------------------- */
+
+/* --------------------------------------------NAVIGATION BAR ENDS-------------------------------------------- */
+
+/* --------------------------------------------HOME PAGE STARTS-------------------------------------------- */
+
+.twoColumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+  
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.left {
+    padding-top: 6.2%;
+    padding-left: 2.4%;
+}
+
+.right {
+    max-width: 100%;
+    align-items: center;
+    padding-top: 15%;
+    padding-right: 3%;
+    font-size: 2rem;
+}
+
+.homecontainer {
+    min-height: 80vh;
+    text-align: center;
+    font-size: 50px;
+}
+/* --------------------------------------------HOME PAGE ENDS-------------------------------------------- */
+
+/* --------------------------------------------ABOUT PAGE STARTS-------------------------------------------- */
+
+/* --------------------------------------------ABOUT PAGE ENDS-------------------------------------------- */
+
+/* --------------------------------------------SKILLS IMAGES STARTS-------------------------------------------- */
+.meramarquee {
+    min-height: 25rem;
+    padding-top: 8%;
+    padding-left: 20%;
+    padding-right: 10%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.meramarquee::-webkit-scrollbar{
+    width: 0rem;
+}
+.meramarquee .item {
+    text-align: left;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 10%;
+    padding: 20px;
+    height: 10rem;
+    width: auto;
+}
+.meramarquee .item:hover{
+    /* background-color: #E6F6F6; */
+    transform: translateY(-10%);
+    transition: 0.5s;
+    width: auto;
+}
+/* --------------------------------------------SKILLS IMAGES ENDS-------------------------------------------- */
+
+
+.comparebtn {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+}
+.comparebtn:hover {
+    background-color: #00986f;
+    transition: 0.5s;
+}
+/* --------------------------------------------PROJECTS PAGE STARTS-------------------------------------------- */
+.projectsbox {
+    /* position: absolute; */
+    display: flex;
+    /* background-color: #00986f; */
+    /* width: 100vw; */
+    /* height: 90vh; */
+    justify-content: space-between;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: visible;
+    padding-bottom: 40px;
+}
+.portfoliopg {
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+.moviepg {
+    width: 50%;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-right: 40px;
+    text-align: center;
+}
+/* --------------------------------------------PROJECTS PAGE ENDS-------------------------------------------- */
+
+
+/* --------------------------------------------FORM STARTS-------------------------------------------- */
+.contactform{
+    padding-top: 9vh;
+    padding-left: 15%;
+    padding-bottom: 40px;
+}
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 400px;
+}
+.row{
+    display: flex;
+    align-items: left;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+.col{
+    width: 40%;
+    flex-basis: 42%;
+}
+.col2 {
+    flex-basis: 62%;
+    /* padding-top: 3%; */
+    width: 40%;
+}
+.form-element span{
+    margin-bottom: 5px;
+}
+input,textarea {
+    background: rgb(207, 207, 207);
+    height: 40px;
+    width: 32vw;
+    padding: 5%;
+    border: 0;
+    border-radius: 3px;
+}
+textarea{
+    height: 210px;
+}
+.submitbtn{
+    border-radius: 0.5rem;
+    width:100px;
+    height: 40px;
+    background-color: rgb(189, 189, 189);
+    /* background-repeat: no-repeat; */
+    border-color: #E6F6F6;
+    border-width: 0.3rem;
+}
+.submitbtn:hover{
+    background-color: white;
+    color: #1d2026;
+}
+/* --------------------------------------------FORM ENDS-------------------------------------------- */
+
+/* -------------------------------------------- CONTACT PAGE STARTS -------------------------------------------- */
+.contacton {
+    position: absolute;
+    top:25%;
+    right: -4.6rem;
+}
+.contacton li {
+    border-radius: 999em 0% 0% 999em;
+    font-size: 1rem;
+    display: flex;
+    position: relative;
+    list-style: none;
+    width: 100%;
+    background: #3e3f46;
+    padding-left: 20%;
+    padding-top: 20%;
+    padding-right: 145%;
+    padding-bottom: 20%;
+    transition: 0.5s;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+.contacton li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.contacton li:hover {
+    transform: translateX(-72%);
+}
+.contacton li span:hover {
+    cursor: pointer;
+}
+/* -------------------------------------------- CONTACT PAGE ENDS -------------------------------------------- */
+.headdertext{
+    font-size: 40px;
+    padding-left: 8%;
+}
+.contactme{
+    padding-left: 0% !important;
+}
+
+/*  */
+@media (max-width :900px) {
+    .headdertext{
+        font-size: 30px;
+    }
+    nav{
+        display: none;
+    }
+    .meramarquee {
+        padding-top: 8vh;
+    }
+    .homepg {
+        min-width: none;
+    }
+    .skillspg {
+        height: 50vh;
+    }
+    .codeforcestext {
+        font-size: 20px;
+    }
+    .twoColumns{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    #navbutton{
+        display: block !important;
+    }
+    /* .projectpg {
+        min-height: auto;
+    } */
+    .projectsbox {
+        flex-direction: column;
+        overflow-y: visible;
+    }
+    .portfoliopg {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .moviepg {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .responsive{
+        max-width: 80%;
+    }
+    .left{
+        padding-left: 0%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    input,textarea {
+        width: 65vw;
+    }
+    .progressbar{
+        top: 0;
+    }
+    .homecontainer {
+        font-size: 30px;
+    }
+}
+
