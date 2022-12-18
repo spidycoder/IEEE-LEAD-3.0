@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush's webpage</title>
+    <link rel="stylesheet" href="resources/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="text-align: center;">
+
+    <!---------------------------------------------- NAVIGATION BAR STARTS ---------------------------------------------->
+    
+    <header>
+        <div class="progressbar" id="progressbar">
+            <div class="progress-bar-inner">
+                <!--0%-->
+            </div>
+        </div>
+        <button id="navbutton" class="navbutton" onclick="sidebaron()" style="color: #757575;"><i class="fa-solid fa-bars"></i></button>
+        <nav id="navbar" class="navbar" style="background: rgba(10, 9, 10, 0.563);">
+            <ul>
+                <li><a href="#homepg"><strong>Home</strong></a></li>
+                <li><a href="#aboutpg"><strong>About</strong></a></li>
+                <li><a href="#skillspg"><strong>Skills</strong></a></li>
+                <li><a href="#projectpg"><strong>Projects</strong></a></li>
+                <li><a href="#contactpg"><strong>Contact</strong></a></li>
+                <li><button type="button" class="modebutton" onclick="toggleBtn()" id="btn"><span></span></button></li>
+            </ul>            
+        </nav>
+        
+        
+    </header>
+    <div id="mysidebar" class="sidebar">
+        <a href="#aboutpg" onclick="sidebaroff()">About</a>
+        <a href="#skillspg" onclick="sidebaroff()">Skills</a>
+        <a href="#projectpg" onclick="sidebaroff()">Projects </a>
+        <a href="#contactpg" onclick="sidebaroff()">Contact</a>
+        <p>‎</p>
+        <button type="button" class="modebutton" onclick="toggleBtn(); sidebaroff()" id="btn1"><span></span></button>
+      </div>
+    <!---------------------------------------------- NAVIGATION BAR ENDS ---------------------------------------------->
+    
+    <!---------------------------------------------- HOME PAGE STARTS ---------------------------------------------->
+    <div class = "homepg" id="homepg">
+        <div class="twoColumns">
+            <div class="left">
+                <img src="resources/software_development.svg" class="responsive">
+            </div>
+            <div class="right" class="responsive">
+                <p style="padding-top: 70px;">Hi, this is</p>
+            <h1 >
+                Ayush Kumar
+            </h1>
+            <p>Welcome to my portfolio</p>
+            </div>
+        </div>
+        <!-- <div class="homecontainer">
+            <p style="padding-top: 180px;">Hi, this is</p>
+            <h1 style= "font-family: 'Alata', sans-serif;">
+                Ayush Kumar
+            </h1>
+            <p>Welcome to my portfolio</p>
+        </div> -->
+    </div>
+    <!---------------------------------------------- HOME PAGE ENDS ---------------------------------------------->
+
+    <!---------------------------------------------- ABOUT PAGE STARTS ---------------------------------------------->
+    <div class="aboutpg" id="aboutpg">
+        <h1 class="headdertext" style="text-align: left;">ABOUT ME</h1>
+        <h1 style="font-size: 40px; padding-top: 4%;">Thinker. Problem-solver. Programmer.</h1>
+        <p id="boutme" style="font-size: 27px; padding-top: 3%; padding-left:7%; padding-right:7%; padding-bottom: 50px;">My name is Ayush Kumar, and I am a Birla Institute of Technology, Mesra undergrad student pursuing a degree in B.Tech Computer Science and Engineering. 
+            <br><br> I have a keen interest in the field of Machine learning and Competitive programming. 
+            <br><br> I like to stay in 127.0.0.1 zone.
+            </p>
+    </div>
+    <!---------------------------------------------- ABOUT PAGE ENDS ---------------------------------------------->
+
+    <!---------------------------------------------- SKILLS PAGE STARTS ---------------------------------------------->
+    <div class="skillspg" id="skillspg" style="text-align: left;">
+        <h1 class="headdertext">MY SKILLS</h1> <p id="langname"></p>
+        <div class="meramarquee" id="meramarquee">
+                <img class="item cpplogo" src="skillz/C++-logo-vector-01.svg" alt="" />
+                <img class="item clogo" src="skillz/C-logo-vector-01.svg" alt="" />
+                <img class="item csslogo" src="skillz/CSS-3-logo-vector-01.svg" alt="" />
+                <img class="item htmllogo" src="skillz/HTML-5-logo-vector-01.svg" alt="" />
+                <img class="item javalogo" src="skillz/Java-logo-vector-01.svg" alt="" />
+                <img class="item jslogo" src="skillz/JavaScript-logo-vector-01.svg" alt="" />
+                <img class="item nodelogo" src="skillz/Node-JS-logo-vector-01.svg" alt="" />
+            <div class="item1">
+                <img class="item pythonlogo" src="skillz/img_python_logo_black_wide2.svg" alt="" />
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------- SKILLS PAGE ENDS ---------------------------------------------->
+    
+    <!---------------------------------------------- PROJECTS PAGE STARTS ---------------------------------------------->
+    <div class="projectpg" id="projectpg" style="text-align: left;">
+        <h1 class="headdertext">MY PROJECTS</h1>
+        <div class="projectsbox">
+            <div class="portfoliopg">
+                <a href=""><img src="resources/Screenshot_20221106_015021.png" alt="" style="width: 100%; border-radius: 10px;"></a>
+                <h1>This is my portfolio</h1>
+                <h3 style="padding-top: 2vh;">Which you are currently viewing. You can find <a href="" style="text-decoration: none;">Github repo here</a></h3>
+            </div>
+            <div class="moviepg">
+                <a href=""><img src="resources/Screenshot_20221109_003353.png" alt="" style="width: 100%; border-radius: 10px"></a>
+                <h1>This is a project which displays movie details</h1>
+                <h3 style="padding-top: 2vh;">Which displays the popular movies and can also be used to search movies. You can find <a href="" style="text-decoration: none;">Github repo here</a></h3>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------- PROJECTS PAGE ENDS ---------------------------------------------->
+
+    <!---------------------------------------------- CODEFORCES PAGE STARTS ---------------------------------------------->
+    <div class="codeforcespg" id="codeforcespg" style="text-align: left;">
+        <h1 class="headdertext">MY CODEFORCES ACCOUNT</h1>
+        <div class="myrating" id="myrating"></div>
+        <div class="userrating" id="userrating" style="position:relative ;"></div>
+        <div class="buttoncontain" style="text-align:center; padding-bottom: 40px;">
+            <button type="button" onclick="comparerating()" class="comparebtn" id="comparebtn">Compare Rating</button>
+        </div>
+        
+    </div>
+    <!---------------------------------------------- CODEFORCES PAGE ENDS ---------------------------------------------->
+
+    <!---------------------------------------------- CONTACT FORM STARTS ---------------------------------------------->
+    <div class="contactpg" id="contactpg" style="text-align: left;">
+        <h1 class="headdertext">CONTACT ME</h1>
+        <h3 style="padding-left: 8%; padding-top: 1%;">It was great that you viewed my portfolio. Do share your valuable feedback.</h3>
+        <div class="contactform" id="contactform" style="text-align: left;">
+            <ul class="contacton">
+                <li><a href="" target="_blank"><span><i class="fa-brands fa-instagram"></i>‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Instagram</span></a></li>
+                <li><a href="https://twitter.com/ayushkumarone" target="_blank"><span><i class="fa-brands fa-twitter"></i>‎ ‎ ‎ ‎ ‎ ‎ Twitter</span></a></li>
+                <li><a href="https://github.com/ayushkumarone" target="_blank"><span><i class="fa-brands fa-github"></i>‎ ‎ ‎ ‎ ‎ ‎ Github</span></a></li>
+                <li><a href="https://www.hackerrank.com/ayushkumar4626" target="_blank"><span><i class="fa-brands fa-hackerrank"></i>‎ ‎ ‎ ‎ ‎ ‎ Hackerrank</span></a></li>
+            </ul>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf5tqdXUqRnLZGgzbpfhpJIQLj_L0qN4JJd3xuIvAIno31o8Q/formResponse" method="post">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-element">
+                            <span>Name</span>
+                            <input type="text" name="entry.2005620554" required>
+                        </div>
+                        <div class="form-element">
+                            <span>Email Address</span>
+                            <input type="email" name="emailAddress" required>
+                        </div>
+                        <div class="form-element">
+                            <span>Phone Number</span>
+                            <input type="text" name="entry.1166974658" required>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="form-element">
+                            <span>Message</span>
+                            <textarea type="text" name="entry.839337160" required cols="10" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="submitbtn">Submit</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+    <!---------------------------------------------- CONTACT FORM ENDS ---------------------------------------------->
+
+    <!---------------------------------------------- FOOTER STARTS ---------------------------------------------->
+    <div class="footer" style="background-color: rgb(255, 255, 255);">
+        <i class="fa-regular fa-copyright"></i> Ayush Kumar 2022
+    </div>
+    <!---------------------------------------------- FOOTER ENDS ---------------------------------------------->
+
+</body>
+<script src="resources/merajs.js"></script>
+</html>

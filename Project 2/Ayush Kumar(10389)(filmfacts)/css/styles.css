@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #080808;
+    font-family: 'Carter One', cursive;
+}
+
+.darkbody {
+    background-color: white;
+}
+.darkfont {
+    color: #18bdda;
+}
+/* --------------------------------------- NAVIGATION BAR STARTS --------------------------------------- */
+.navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 2vw;
+    background-color: #080808b7;
+    /* max-width: 1440px; */
+    margin: auto;
+    width: 100%;
+    z-index: 100;
+}
+
+#navbutton {
+    background: #e6f6f600;
+    color: #fff;
+    font-size: x-large;
+    border: none;
+    z-index: 100;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.579);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    align-items: center;
+    justify-items: center;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #8a8484;
+}
+
+.progressbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #1d202600;
+    transition: 0.6s;
+    z-index: 1000;
+}
+
+.progress-bar-inner {
+    position: fixed;
+    width: 0%;
+    padding: 0%;
+    height: 4px;
+    background: #FFCE00;
+    z-index: 10000;
+}
+
+.logo {
+    color: red;
+    font-family: 'Lobster Two', cursive;
+    /* font-size: larger */
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0px auto 0px 2vw;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.searchbar {
+    background-color: #d1d1d11b;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    z-index: 100;
+}
+
+.searchbar input{
+    background-color: transparent;
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-family: 'Alata', sans-serif;
+    z-index: 100;
+}
+
+.searchbar button{
+    background-color: transparent;
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#daynightbutton {
+    color: white;
+    background-color: transparent;
+    width: 27px;
+    height: 30px;
+}
+/* --------------------------------------- NAVIGATION BAR ENDS --------------------------------------- */
+
+/* --------------------------------------- MOVIES SLIDER STARTS --------------------------------------- */
+#movieslider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.movieslider-box {
+    width: 100%;
+    height: 400px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #0e0e0ec2;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+.movieslider-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.movieslider-img img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.movieslider-textup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 100%;
+    background: linear-gradient(360deg, #161616c3 40%, rgba(73, 73, 73, 0.03) 70%);
+    font-family: 'Comfortaa', cursive;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100%;
+    color: #dbdbdb;
+    text-decoration: none;
+    z-index: 2;
+}
+.movieslider-box:hover .movieslider-textup{
+    top: 0px;
+    transition: ease 0.5s;
+}
+.footer {
+    color: #dbdbdb;
+    text-align: center;
+    height: 30vh;
+    padding-top: 80px;
+    font-size: 20px;
+}
+.links {
+    font-size: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: #dbdbdb;
+}
+/* --------------------------------------- MOVIES SLIDER ENDS --------------------------------------- */
+
+
+
+
+
+
+/* --------------------------------------- MOVIES PAGE STARTS --------------------------------------- */
+.outercovering {
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+}
+.floatingcontainer {
+    position: absolute;
+    display: flex;
+    font-family: 'Alata', sans-serif;
+    color: seashell;
+    background-color: #080808a4;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 68vh;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+.posterofmovie {
+    width: 30%;
+    left: 50%;
+}
+.moviedetails {
+    width: 70%;
+    padding-right: 24px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+}
+.floatingcontainer::-webkit-scrollbar {
+    width: 0;
+}
+.moviedetails::-webkit-scrollbar {
+    width: 0;
+}
+/* --------------------------------------- MOVIES PAGE ENDS --------------------------------------- */
+/* --------------------------------------- SEARCH PAGE STARTS --------------------------------------- */
+#moviesection {
+    display: flex;
+    font-family: 'Alata', sans-serif;
+    color: seashell;
+    background-color: #080808a4;
+    padding-top: 5vw;
+    padding-left: 14vw;
+    width: 80vw;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+#poster {
+    width: 16vw;
+    height: auto;
+}
+#details {
+    width: 64vw;
+    padding-left: 30px;
+}
+/* --------------------------------------- SEARCH PAGE ENDS --------------------------------------- */
+
+@media (max-width : 740px) {
+    .searchbar input{
+        width: 80%;
+    }
+    .logo {
+        font-size: 7vw;
+    }
+    .floatingcontainer {
+        width: 90%;
+    }
+    .floatingcontainer {
+        flex-direction: column;
+    }
+    .posterofmovie {
+        width: 80%;
+        padding-top: 10%;
+        padding-left: 20%;
+    }
+    .moviedetails {
+        overflow-y: visible;
+    }
+    .moviedetails {
+        width: 100%;
+    }
+    .links {
+        font-size: 23px;
+    }
+    .footer {
+        font-size: small;
+    }
+    #details {
+        font-size: small;
+    }
+    #aboutmovie {
+        display: none;
+    }
+}
+@media (max-width : 440px) {
+    .searchbar input{
+        width: 80%;
+    }
+    .logo {
+        font-size: 7vw;
+    }
+    .floatingcontainer {
+        width: 90%;
+    }
+    .floatingcontainer {
+        flex-direction: column;
+    }
+    .posterofmovie {
+        width: 80%;
+        padding-top: 10%;
+        padding-left: 20%;
+    }
+    .moviedetails {
+        overflow-y: visible;
+    }
+    .moviedetails {
+        width: 100%;
+    }
+    .footer {
+        font-size: x-small;
+    }
+    .links {
+        font-size: 21px;
+    }
+    #details {
+        font-size: x-small;
+    }
+    #aboutmovie {
+        display: none;
+    }
+}
